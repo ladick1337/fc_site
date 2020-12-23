@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Auth</title>
+</head>
+<body style="background: #020030">
+    <div class="registration__inner">
+        <div class="registration__authorization" onclick="expansion()">
+            <form action="php/authorization.php" method="POST">
+                <input name="login" type="text" name="login" placeholder="Login">
+                <input name="password" type="password" name="password" placeholder="Password" value="">
+                <input type="submit" value="ВОЙТИ">
+
+            </form>
+            <p>
+                Ещё нет аккаунта на нашем сайте? <a class="login-to-reg" href="registration.html">Зарегистрируйтесь</a>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/registration.js"></script>
+</body>
+</html>
